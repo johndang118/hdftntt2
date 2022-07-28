@@ -45,9 +45,11 @@ function addStudent(firstName, middleName, lastName, dateOfBirth, nganh, gender,
         notes: notes
     })
     .then((docRef) => {
+        alert("Successfully Registered Student with Id: ", id);
         console.log("Student added with ID: ", id);
     })
     .catch((error) => {
+        alert("Could not register. Contact JD");
         console.error("Error adding student: ", error);
     });
 
